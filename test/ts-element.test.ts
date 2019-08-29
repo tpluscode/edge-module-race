@@ -15,6 +15,6 @@ describe('<ts-element>', () => {
       <ts-element heading="different heading"></ts-element>
     `)
 
-    expect(el.heading).to.equal('different heading')
+    expect(el).shadowDom.to.equalSnapshot()
   })
 })
